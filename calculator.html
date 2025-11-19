@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Calculator</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="calculator.css">
+
+</head>
+
+<body>
+    <div class="heading" id="heading">
+    </div>
+    <p>Using HTML CSS & JavaScript</p>
+    <div class="calculator">
+
+        <div class="display">
+            <intput type="text" id="display" name="display"></intput>
+        </div>
+        <div class="buttons">
+
+            <!-- First Row -->
+            <button class="clear" onclick="clearDisplay()">AC</button>
+            <button class="del" onclick="delDisplay()">C</button>
+            <button onclick="appendValue('/')" class="divoperator">/</button>
+            <button onclick="appendValue('*')" class="multioperator">*</button>
+
+
+            <!-- Second Row -->
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button onclick="appendValue('+')" class="addoperator">+</button>
+
+            <!-- Third Row -->
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('6')">6</button>
+            <button onclick="appendValue('-')" class="suboperator">-</button>
+
+
+            <!-- Fourth Row -->
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('3')">3</button>
+            <button onclick="appendValue('0')">0</button>
+
+            <!-- Fifth Row -->
+            <button onclick="appendValue('(')">(</button>
+            <button onclick="appendValue(')')">)</button>
+            <button onclick="appendValue('.')">.</button>
+            <button onclick="appendValue('00')">00</button>
+
+            <!-- Sixth Row -->
+            <button onclick="calculate()" class="equal">=</button>
+        </div>
+    </div>
+    <!-- JavaScript Start -->
+    <script src="calculator.js"></script>
+</body>
+
+</html>
